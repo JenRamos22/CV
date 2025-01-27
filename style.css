@@ -1,0 +1,275 @@
+
+/* Fondo para toda la página */
+body {
+  margin: 0; /* Elimina márgenes predeterminados del navegador */
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;; /* Asegura una fuente legible */
+  background: linear-gradient(135deg, #f1f2f6, #b8c6db);
+  background-size: cover; /* Asegura que el fondo cubra toda la página */
+  background-attachment: fixed; /* Hace que el fondo permanezca fijo al hacer scroll */
+  background-repeat: no-repeat; /* Evita que el fondo se repita */
+}
+
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items:  stretch;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 40px;
+}
+
+/* Estilo para las columnas */
+.left {
+  flex: 0 0 300px;
+  background-color: #fde0c3;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Margen externo */
+}
+
+.right {
+  flex: 1;
+  min-width: 300px;
+  background-color: #fde0c3;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Margen externo */
+}
+
+
+.left, .right {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+/* Secciones internas */
+.section {
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #080808; /* Color de los subtítulos */
+}
+
+h2 {
+  border-bottom: 2px solid #ff5733;  /* Línea debajo de los títulos */
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* Efecto en los títulos */
+h1, h2 {
+  transition: color 0.3s ease;
+}
+
+
+h1:hover, h2:hover {
+  color: #ff5733;
+    /* Cambia el color al pasar el ratón */
+}
+
+h1,h2 {
+  color: #333
+}
+
+.section p {
+  color: #555
+}
+
+.section {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.section p,
+.section ul {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Estilo para los iconos de contacto */
+.icon-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon-text i {
+  font-size: 20px;
+  color: #ff5733;
+  margin-right: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-text i:hover {
+  transform: scale(1.3) rotate(10deg);
+  color: #ffc300;
+}
+
+/* Barra de progreso */
+.progress-bar {
+  width: 40%;
+  background-color: #e0e0e0;
+  border-radius: 60px;
+  height: 10px;
+  
+}
+
+.progress {
+  background-color: #ff5733;
+  height: 100%;
+  border-radius: 10px;
+ 
+}
+
+/* Barra de progreso */
+.progress-bar {
+  width: 50%;
+  background-color: #e0e0e0;
+  border-radius: 60px;
+  height: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* Barra interna con animación */
+.progress {
+  background-color: #ff5733;
+  height: 100%;
+  border-radius: 60px;
+  width: var(--progress-width);
+  position: absolute;
+  animation: pulse 3s infinite; /* Animación continua */
+}
+
+/* Efecto "pulse" */
+@keyframes pulse {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(1.02); /* Leve crecimiento */
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+/* Imagen de perfil */
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #fde0c3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.profile-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor_foto {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de la foto */
+.photo-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden; /* Esconde cualquier parte que sobresalga del contenedor */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen animada */
+.animated-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: breathing 4s infinite alternate, scrollEffect 10s linear infinite;
+}
+
+/* Efecto de zoom (breathing) */
+@keyframes breathing {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* Efecto de movimiento vertical */
+@keyframes scrollEffect {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Brillo animado */
+.photo-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  animation: shinyEffect 4s infinite;
+}
+
+@keyframes shinyEffect {
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 20%;
+  }
+}
+
+
+
+/* Ajustes para dispositivos pequeños */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
