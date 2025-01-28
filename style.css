@@ -260,16 +260,95 @@ ul {
 }
 
 
+.left,
+.right {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#skills {
+  margin: 20px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+#skills {
+  margin: 20px 0;
+  font-family: 'Roboto', sans-serif; 
+  }
+
+#skills h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #333; /* Color del título */
+  text-align: center; /* Centra el título */
+  transition: color 0.3s ease;
+  
+}
+#skills h2:hover {
+  color: #e44d26; /* Color al pasar el mouse */
+}
+
+#skills ul {
+  padding-left: 20px; /* Espacio a la izquierda para los elementos de la lista */
+}
+
+#skills li {
+  margin-bottom: 15px; /* Espacio entre cada ítem de la lista */
+  line-height: 1.5; /* Aumenta la distancia entre líneas para mayor legibilidad */
+}
+
+#skills li strong {
+  font-weight: bold; /* Resalta los títulos de las habilidades */
+  color: #2c3e50; /* Cambia el color del texto fuerte */
+}
+
+
+/* Estilo general para la sección */
+#software-skills {
+  margin: 20px 0;
+  font-family: 'Roboto', sans-serif; /* Cambia el estilo de la fuente */
+}
+
+
+
+
+#software-skills h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Estilo para cada skill */
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15px; /* Espacio entre habilidades */
+}
+
+.skill-icon {
+  margin-right: 15px; /* Espacio entre el ícono y el texto */
+}
+
+.skill-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 5px; /* Separa el nombre de la barra de nivel */
+}
+
+.skill-level {
+  margin-left: 15px; /* Separación hacia la derecha */
+  position: relative;
+  top: -2px; /* Ajuste vertical fino */
+  font-size: 1.2rem; /* Ajusta el tamaño de las estrellas */
+  color: #f39c12; /* Cambia el color a dorado o cualquier otro */
+}
 
 /* Ajustes para dispositivos pequeños */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-  }
-
-  .left,
-  .right {
-    width: 100%;
-    margin-top: 10px;
   }
 }
