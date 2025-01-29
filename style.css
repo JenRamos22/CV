@@ -187,9 +187,10 @@ ul {
 }
 
 .profile-image:hover {
-  transform: scale(1.1);
+  transform: scale(1.1) rotate(5deg);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
 }
+
 
 .contenedor_foto {
   text-align: center;
@@ -345,6 +346,32 @@ ul {
   font-size: 1.2rem; /* Ajusta el tamaño de las estrellas */
   color: #f39c12; /* Cambia el color a dorado o cualquier otro */
 }
+
+/* Estilo general para los círculos de nivel */
+.level-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background-color: #ccc; /* Color gris para las habilidades no alcanzadas */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Círculo activo (habilidad alcanzada) */
+.level-circle.active {
+  background-color: #ff5733; /* Color que representa el nivel alcanzado */
+}
+
+/* Ajustes cuando el nivel de habilidad no está completo */
+.skill-level {
+  display: flex;
+  align-items: center;
+}
+.skill:hover .skill-name {
+  opacity: 0.7;
+  transform: translateX(10px);
+}
+
 
 /* Ajustes para dispositivos pequeños */
 @media (max-width: 768px) {
