@@ -68,17 +68,17 @@ h2 {
 }
 
 /* Efecto en los títulos */
-h1, h2 {
+h1, h2, h3 {
   transition: color 0.3s ease;
 }
 
 
-h1:hover, h2:hover {
+h1:hover, h2:hover, h3:hover {
   color: #ff5733;
     /* Cambia el color al pasar el ratón */
 }
 
-h1,h2 {
+h1,h2,h3 {
   color: #333
 }
 
@@ -377,5 +377,10 @@ ul {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+    
   }
+}
+
+h1, h2, h3 {
+  text-align: center;
 }
