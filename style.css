@@ -1,4 +1,5 @@
 
+
 /* Fondo para toda la página */
 body {
   margin: 0; /* Elimina márgenes predeterminados del navegador */
@@ -385,30 +386,38 @@ ul {
 
 /* Ajustes para dispositivos pequeños */
 @media (max-width: 768px) {
+  body, html {
+    overflow-x: hidden; /* Evita desplazamiento horizontal */
+  }
+
   .container {
-    flex-direction: column; /* Asegura que las columnas se apilen */
-    align-items: stretch; /* Hace que ambas secciones ocupen el ancho completo */
-    padding: 10px; /* Reduce el espacio interno */
+    flex-direction: column; /* Asegura que los elementos se apilen */
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .left, .right {
-    width: 100%; /* Que ambas secciones ocupen todo el ancho */
-    margin: 0; /* Elimina márgenes extra */
-    padding: 15px; /* Reduce padding interno */
+    width: 100%; /* Asegura que ocupen el ancho completo */
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
   }
 
   h1, h2, h3 {
-    font-size: 18px; /* Reduce tamaño de títulos */
+    font-size: 18px; /* Ajusta tamaño de los títulos */
   }
 
   .profile-image {
-    width: 100px;
-    height: 100px; /* Reduce la imagen de perfil */
+    width: 90px;
+    height: 90px; /* Reduce la imagen de perfil */
   }
 
   .progress-bar {
-    width: 100%; /* Ajusta barras de progreso al ancho */
+    width: 100%; /* Asegura que las barras de progreso ocupen el ancho disponible */
   }
 }
-
-
