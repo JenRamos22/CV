@@ -3,7 +3,7 @@
 body {
   margin: 0; /* Elimina márgenes predeterminados del navegador */
   padding: 20px;
-  font-family: 'Roboto', sans-serif;; /* Asegura una fuente legible */
+  font-family: 'Roboto', sans-serif; /* Asegura una fuente legible */
   background: linear-gradient(135deg, #f1f2f6, #b8c6db);
   background-size: cover; /* Asegura que el fondo cubra toda la página */
   background-attachment: fixed; /* Hace que el fondo permanezca fijo al hacer scroll */
@@ -14,25 +14,26 @@ body {
 /* Contenedor principal */
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
-  align-items:  stretch;
+  align-items: stretch;
   flex-wrap: wrap;
   width: 100%;
   box-sizing: border-box;
   margin: 40px auto;
   max-width: 1200px;
-  padding: 40px;
+  padding: 0;
+  
 }
 
 /* Estilo para las columnas */
 .left {
-  flex: 0 0 300px;
+  flex: 1;
   background-color: #fde0c3;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 10px; /* Margen externo */
+  
 }
 
 .right {
@@ -42,7 +43,7 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 10px; /* Margen externo */
+ 
 }
 
 
@@ -182,8 +183,8 @@ ul {
 
 /* Imagen de perfil */
 .profile-image {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   border: 4px solid #fde0c3;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -202,6 +203,8 @@ ul {
 .contenedor_foto {
   text-align: center;
   margin-bottom: 20px;
+  max-width: 200px;  /* Limita el tamaño del contenedor */
+  margin: 0 auto;
 }
 
 /* Contenedor de la foto */
@@ -260,7 +263,7 @@ ul {
 
 @keyframes shinyEffect {
   0% {
-    left: -20%;
+    left: -100%;
   }
   100% {
     left: 20%;
@@ -383,8 +386,9 @@ ul {
 /* Ajustes para dispositivos pequeños */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* Asegura que los elementos se apilen */
-    padding: 20px; /* Reduce el padding para más espacio */
+    flex-direction: column; /* Asegura que las columnas se apilen */
+    align-items: stretch; /* Hace que ambas secciones ocupen el ancho completo */
+    padding: 10px; /* Reduce el espacio interno */
   }
 
   .left, .right {
@@ -398,8 +402,8 @@ ul {
   }
 
   .profile-image {
-    width: 120px;
-    height: 120px; /* Reduce la imagen de perfil */
+    width: 100px;
+    height: 100px; /* Reduce la imagen de perfil */
   }
 
   .progress-bar {
