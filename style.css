@@ -57,6 +57,25 @@ body {
   margin-bottom: 20px;
 }
 
+button {
+  background-color: #fde0c3;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+}
+
+button {
+  transition: color 0.3s ease;
+
+}
+
+button:hover {
+  color: #D8BFD8;
+
+}
 .section h2 {
   font-size: 20px;
   margin-bottom: 20px;

@@ -14,6 +14,9 @@
 
   </head>
   <body>
+    <!-- Un elemento es cualquier parte de una página web (HTML) como un h1, p, button, div, etc -->
+
+    <button id="language-toggle">Cambiar a Inglés</button>
     <main>
       <div class="container">
         <!-- Parte izquierda -->
@@ -26,38 +29,38 @@
             />
             
           </div>
-          <h1>Yeni Ramos</h1>
-          <h3>Estudiante de desarrollo de software</h3>
+          <h1><span id="nombre">Yeni Ramos</span></h1>
+          <h3><span id="profesion">Desarrolladora de software junior</span></h3>
           <div class="section" id="about-me">
-            <h2>Sobre mí</h2>
-            <p>
+            <h2><span id="sobre-mi-titulo">Sobre mí</span></h2>
+            <p><span id="sobre-mi-texto">
               Soy estudiante de Análisis y Desarrollo de Software con enfoque en programación. Actualmente, estoy aprendiendo JavaScript, HTML y CSS, 
               además explorando diferentes áreas del desarrollo de software. Me interesa crear soluciones tecnológicas eficientes y seguir mejorando 
               mis habilidades en programación. Busco oportunidades para aplicar mis conocimientos en proyectos prácticos y seguir creciendo en la industria tecnológica.
-            </p>
+            </span></p>
           </div>
           <div class="section" id="lenguajes">
-            <h2>Idiomas</h2>
-            <p>Español - Nativo</p>
+            <h2><span id="idiomas-titulo">Idiomas</span></h2>
+            <p><span id="idioma-espanol">Español - Nativo</span></p>
             <div class="progress-bar">
               <div class="progress" style="width: 100%;"></div>
             </div>
             <div class="language-level">
-              <p>Inglés - Intermedio</p>
+              <p><span id="idioma-ingles">Inglés - Intermedio</span></p>
               <div class="progress-bar">
                 <div class="progress" style="width: 60%;"></div>
               </div>
             </div>
           </div>
           <div class="section" id="contact">
-            <h2>Contacto</h2>
+            <h2><span id="contacto-titulo">Contacto</span></h2>
             <div class="icon-text">
               <i class="fas fa-envelope"></i>
-              <p>Correo: jenraor@gmail.com</p>
+              <p><span id="contacto-correo">Correo: jenraor@gmail.com</span></p>
             </div>
             <div class="icon-text">
               <i class="fas fa-phone"></i>
-              <p>Teléfono: 3153615086</p>
+              <p><span id="contacto-telefono">Teléfono: 3153615086</span></p>
             </div>
           </div>
         </div>
@@ -67,52 +70,52 @@
           <div class="section" id="skills">
             
           <div class="section" id="education">
-            <h2>Educación</h2>
+            <h2><span id="educacion-titulo">Educación</span></h2>
             <ul>
               <li>
-                <strong>Bachiller Técnico Comercial</strong>
-                <p>Colegio Técnico Industrial Oliva Caicedo</p>
-                <p>2000-2005</p>
+                <strong id="bachillerato-titulo">Bachiller Técnico Comercial</strong>
+                <p id="bachillerato-institucion">Colegio Técnico Industrial Oliva Caicedo</p>
+                <p id="bachillerato-fecha">2000-2005</p>
               </li>
               <li>
-                <strong>Tecnología en Análisis y Desarrollo de Software</strong>
-                <p>SENA</p>
-                <p>2023-2025</p>
+                <strong id="tecnologia-titulo">Tecnología en Análisis y Desarrollo de Software</strong>
+                <p id="tecnologia-institucion">SENA</p>
+                <p id="tecnologia-fecha">2023-2025</p>
               </li>
             </ul>
-            <h2>Habilidades</h2>
-            <ul>
-              
-              <li>
-                <strong>Capacidad de aprendizaje:</strong> Adaptabilidad y
-                facilidad para adquirir nuevas habilidades técnicas de manera
-                autodidacta.
-              </li>
-              <li>
-                <strong>Gestión de tareas:</strong> Organizada y comprometida en
-                el cumplimiento de objetivos.
-              </li>
-              <li>
-                <strong>Comunicación en inglés:</strong> Habilidad para
-                comprender y comunicar ideas básicas en inglés.
-              </li>
-              <li>
-                <strong>Resolución de problemas:</strong> Habilidad para
-                identificar problemas y buscar soluciones innovadoras.
-              </li>
-              <li>
-                <strong>Trabajo en equipo</strong> Colaboración eficaz con otros para 
-                lograr objetivos comunes.
-              </li>
-              <li>
-                <strong>Adaptabilidad:</strong> Ajuste rápido a cambios y 
-                nuevos entornos de trabajo.
-              </li>
-              
-            </ul>
+            <div class="section" id="habilidades">
+              <h2 id="habilidades-titulo">Habilidades</h2>
+              <ul>
+                  <li>
+                      <strong id="habilidad-aprendizaje">Adaptabilidad al aprendizaje:</strong> 
+                      <span id="texto-aprendizaje">Habilidad para adquirir nuevas competencias técnicas de manera autónoma 
+                      y adaptarme rápidamente a cambios en el entorno de trabajo.</span>
+                  </li>
+                  <li>
+                      <strong id="habilidad-gestion">Gestión de tareas:</strong> 
+                      <span id="texto-gestion">Organizada y comprometida en el cumplimiento de objetivos.</span>
+                  </li>
+                  <li>
+                      <strong id="habilidad-ingles">Comunicación en inglés:</strong> 
+                      <span id="texto-ingles">Habilidad para comprender y comunicar ideas básicas en inglés.</span>
+                  </li>
+                  <li>
+                      <strong id="habilidad-problemas">Resolución de problemas:</strong> 
+                      <span id="texto-problemas">Habilidad para identificar problemas y buscar soluciones innovadoras.</span>
+                  </li>
+                  <li>
+                      <strong id="habilidad-equipo">Trabajo en equipo:</strong> 
+                      <span id="texto-equipo">Colaboración eficaz con otros para lograr objetivos comunes.</span>
+                  </li>
+                  <li>
+                      <strong id="habilidad-adaptabilidad">Adaptabilidad:</strong> 
+                      <span id="texto-adaptabilidad">Ajuste rápido a cambios y nuevos entornos de trabajo.</span>
+                  </li>
+              </ul>
           </div>
+          
             <div class="section" id="software-skills">
-              <h2> Habilidades en Software </h2>
+              <h2 id="software-titulo">Habilidades en software</h2>
               <div class="skill">
                 <span class="skill-icon"><i class="fa-brands fa-html5" style="font-size: 2.5rem; color: #e44d26;"></i></span>
                 <span class="skill-name">HTML</span>
@@ -161,7 +164,9 @@
               
           </div>
         </div>
+        
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
