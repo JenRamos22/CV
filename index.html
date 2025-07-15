@@ -1,172 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Curriculum Vitae</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:,">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Curriculum Vitae</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <button id="language-toggle">Cambiar a Inglés</button>
+  <main>
+    <div class="container">
+      <!-- Parte izquierda -->
+      <div class="left">
+        <div class="contenedor_foto">
+          <img src="photo.jpeg" alt="foto de perfil" class="profile-image animated-photo" />
+        </div>
+        <h1><span id="nombre">Yeni Ramos</span></h1>
+        <h3>
+          <span id="profesion">
+            Tecnóloga en Análisis y Desarrollo de Software y estudiante universitaria de Ingeniería de Software
+          </span>
+        </h3>
 
-  </head>
-  <body>
-    <!-- Un elemento es cualquier parte de una página web (HTML) como un h1, p, button, div, etc -->
+       <div class="section" id="about-me">
+  <h2><span id="sobre-mi-titulo">Sobre mí</span></h2>
 
-    <button id="language-toggle">Cambiar a Inglés</button>
-    <main>
-      <div class="container">
-        <!-- Parte izquierda -->
-        <div class="left">
-          <div class="contenedor_foto">
-            <img
-              src="CVPicJen.jpeg"
-              alt="foto de perfil"
-              class="profile-image animated-photo"
-            />
-            
+  <p>
+    Tecnóloga en Análisis y Desarrollo de Software y estudiante de Ingeniería de Software, con enfoque en desarrollo web. Busco mi primera oportunidad en una empresa tecnológica donde pueda aplicar mis conocimientos y seguir creciendo profesionalmente.
+  </p>
+
+  <p>
+    Me destaco por mi capacidad de aprendizaje autónomo, mi responsabilidad y mi habilidad para resolver problemas incluso en contextos nuevos. Durante mi formación, lideré proyectos académicos con éxito y actualmente estoy reforzando mis habilidades.
+  </p>
+
+  <p>
+    Poseo un nivel de inglés B1 en progreso, y cuento con sólidas habilidades blandas.
+  </p>
+</div>
+
+
+        <div class="section" id="lenguajes">
+          <h2><span id="idiomas-titulo">Idiomas</span></h2>
+          <p><span id="idioma-espanol">Español - Nativo</span></p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 100%;"></div>
           </div>
-          <h1><span id="nombre">Yeni Ramos</span></h1>
-          <h3><span id="profesion">Desarrolladora de software junior</span></h3>
-          <div class="section" id="about-me">
-            <h2><span id="sobre-mi-titulo">Sobre mí</span></h2>
-            <p><span id="sobre-mi-texto">
-              Soy estudiante de Análisis y Desarrollo de Software con enfoque en programación. Actualmente, estoy aprendiendo JavaScript, HTML y CSS, 
-              además explorando diferentes áreas del desarrollo de software. Me interesa crear soluciones tecnológicas eficientes y seguir mejorando 
-              mis habilidades en programación. Busco oportunidades para aplicar mis conocimientos en proyectos prácticos y seguir creciendo en la industria tecnológica.
-            </span></p>
-          </div>
-          <div class="section" id="lenguajes">
-            <h2><span id="idiomas-titulo">Idiomas</span></h2>
-            <p><span id="idioma-espanol">Español - Nativo</span></p>
+          <div class="language-level">
+            <p><span id="idioma-ingles">Inglés - Intermedio</span></p>
             <div class="progress-bar">
-              <div class="progress" style="width: 100%;"></div>
-            </div>
-            <div class="language-level">
-              <p><span id="idioma-ingles">Inglés - Intermedio</span></p>
-              <div class="progress-bar">
-                <div class="progress" style="width: 60%;"></div>
-              </div>
-            </div>
-          </div>
-          <div class="section" id="contact">
-            <h2><span id="contacto-titulo">Contacto</span></h2>
-            <div class="icon-text">
-              <i class="fas fa-envelope"></i>
-              <p><span id="contacto-correo">Correo: jenraor@gmail.com</span></p>
-            </div>
-            <div class="icon-text">
-              <i class="fas fa-phone"></i>
-              <p><span id="contacto-telefono">Teléfono: 3153615086</span></p>
+              <div class="progress" style="width: 60%;"></div>
             </div>
           </div>
         </div>
 
-        <!-- Parte derecha -->
-        <div class="right">
-          <div class="section" id="skills">
-            
-          <div class="section" id="education">
-            <h2><span id="educacion-titulo">Educación</span></h2>
-            <ul>
-              <li>
-                <strong id="bachillerato-titulo">Bachiller Técnico Comercial</strong>
-                <p id="bachillerato-institucion">Colegio Técnico Industrial Oliva Caicedo</p>
-                <p id="bachillerato-fecha">2000-2005</p>
-              </li>
-              <li>
-                <strong id="tecnologia-titulo">Tecnología en Análisis y Desarrollo de Software</strong>
-                <p id="tecnologia-institucion">SENA</p>
-                <p id="tecnologia-fecha">2023-2025</p>
-              </li>
-            </ul>
-            <div class="section" id="habilidades">
-              <h2 id="habilidades-titulo">Habilidades</h2>
-              <ul>
-                  <li>
-                      <strong id="habilidad-aprendizaje">Adaptabilidad al aprendizaje:</strong> 
-                      <span id="texto-aprendizaje">Habilidad para adquirir nuevas competencias técnicas de manera autónoma 
-                      y adaptarme rápidamente a cambios en el entorno de trabajo.</span>
-                  </li>
-                  <li>
-                      <strong id="habilidad-gestion">Gestión de tareas:</strong> 
-                      <span id="texto-gestion">Organizada y comprometida en el cumplimiento de objetivos.</span>
-                  </li>
-                  <li>
-                      <strong id="habilidad-ingles">Comunicación en inglés:</strong> 
-                      <span id="texto-ingles">Habilidad para comprender y comunicar ideas básicas en inglés.</span>
-                  </li>
-                  <li>
-                      <strong id="habilidad-problemas">Resolución de problemas:</strong> 
-                      <span id="texto-problemas">Habilidad para identificar problemas y buscar soluciones innovadoras.</span>
-                  </li>
-                  <li>
-                      <strong id="habilidad-equipo">Trabajo en equipo:</strong> 
-                      <span id="texto-equipo">Colaboración eficaz con otros para lograr objetivos comunes.</span>
-                  </li>
-                  <li>
-                      <strong id="habilidad-adaptabilidad">Adaptabilidad:</strong> 
-                      <span id="texto-adaptabilidad">Ajuste rápido a cambios y nuevos entornos de trabajo.</span>
-                  </li>
-              </ul>
+        <div class="section" id="contact">
+          <h2><span id="contacto-titulo">Contacto</span></h2>
+          <div class="icon-text">
+            <i class="fas fa-envelope"></i>
+            <p><span id="contacto-correo">Correo: jenraor@gmail.com</span></p>
           </div>
-          
-            <div class="section" id="software-skills">
-              <h2 id="software-titulo">Habilidades en software</h2>
-              <div class="skill">
-                <span class="skill-icon"><i class="fa-brands fa-html5" style="font-size: 2.5rem; color: #e44d26;"></i></span>
-                <span class="skill-name">HTML</span>
-                <span class="skill-level">
-                  <span class="level-circle active"></span>
-                  <span class="level-circle active"></span>
-                  <span class="level-circle active"></span>
-                  <span class="level-circle"></span>
-                  <span class="level-circle"></span>
-                </span>
-              </div>
-              <div class="skill">
-                <span class="skill-icon"><i class="fa-brands fa-css3-alt" style="font-size: 2.5rem; color: blue;"></i></span>
-                <span class="skill-name">CSS</span>
-                <span class="skill-level">
-                  <span class="level-circle active"></span>
-                  <span class="level-circle active"></span>
-                  <span class="level-circle active"></span>
-                  <span class="level-circle"></span>
-                  <span class="level-circle"></span>
-                </span>
-              </div>
-              <div class="skill">
-                <span class="skill-icon"><i class="fa-brands fa-js" style="font-size: 2.5rem; color: darkgoldenrod;"></i></span>
-                <span class="skill-name">JavaScript</span>
-                <span class="skill-level">
-                  <span class="level-circle active"></span>
-                  <span class="level-circle active"></span>
-                  <span class="level-circle"></span>
-                  <span class="level-circle"></span>
-                  <span class="level-circle"></span>
-                </span>
-              </div>
-              <div class="skill">
-                <span class="skill-icon"><i class="fa-brands fa-github" style="font-size: 2.5rem;"></i></span>
-                <span class="skill-name">GitHub</span>
-                <span class="skill-level">
-                  <span class="level-circle active"></span>
-                  <span class="level-circle active"></span>
-                  <span class="level-circle"></span>
-                  <span class="level-circle"></span>
-                  <span class="level-circle"></span>
-                  
-                </span>
-              </div>
-              
+          <div class="icon-text">
+            <i class="fas fa-phone"></i>
+            <p><span id="contacto-telefono">Teléfono: 3153615086</span></p>
           </div>
         </div>
-        
       </div>
-    </main>
-    <script src="script.js"></script>
-  </body>
+<!-- Parte derecha -->
+<div class="right">
+  <div class="section" id="skills">
+    <!-- Aquí podrías incluir habilidades blandas o técnicas adicionales si lo deseas -->
+  </div> <!-- Cierra #skills -->
+
+  <div class="section" id="education">
+    <h2><span id="educacion-titulo">Educación</span></h2>
+    <ul>
+      <li>
+        <strong id="bachillerato-titulo">Bachiller Técnico Comercial</strong>
+        <p id="bachillerato-institucion">Colegio Técnico Industrial Oliva Caicedo</p>
+        <p id="bachillerato-fecha">2000-2005</p>
+      </li>
+      <li>
+        <strong id="tecnologia-titulo">Tecnología en Análisis y Desarrollo de Software</strong>
+        <p id="tecnologia-institucion">SENA</p>
+        <p id="tecnologia-fecha">2023-2025</p>
+      </li>
+      <li>
+        <strong id="universidad-titulo">Ingeniería de Software</strong>
+        <p id="universidad-institucion">Politécnico Grancolombiano.</p>
+        <p id="universidad-fecha">2025 a la fecha</p>
+      </li>
+    </ul>
+  </div> <!-- Cierra #education -->
+
+  <div class="section" id="habilidades">
+    <h2 id="habilidades-titulo">Habilidades</h2>
+    <ul>
+      <li>
+        <strong id="habilidad-autonomo">Aprendizaje autónomo:</strong>
+        <span id="texto-aprendizaje">Capacidad para investigar, adquirir y aplicar nuevos conocimientos de forma autodidacta, incluso en contextos desconocidos.</span>
+      </li>
+      <li>
+        <strong id="habilidad-equipo">Liderazgo en equipo:</strong>
+        <span id="texto-gestion">Experiencia liderando proyectos académicos, aportando ideas, organizando tareas y fomentando la participación activa del grupo.</span>
+      </li>
+      <li>
+        <strong id="habilidad-cumplimiento">Responsabilidad y cumplimiento:</strong>
+        <span id="texto-ingles">Alta capacidad de organización, entrega puntual de tareas y compromiso con los objetivos establecidos.</span>
+      </li>
+      <li>
+        <strong id="habilidad-asertiva">Comunicación asertiva:</strong>
+        <span id="texto-aseriva">Escucha activa, claridad para expresar ideas y capacidad para mediar en contextos colaborativos.</span>
+      </li>
+      <li>
+        <strong id="habilidad-adaptabilidad">Tolerancia y adaptabilidad:</strong>
+        <span id="texto-adaptabilidad">Facilidad para trabajar con personas diversas, manejar desacuerdos y adaptarse a entornos cambiantes sin perder el enfoque.</span>
+      </li>
+    </ul>
+  </div> <!-- Cierra #habilidades -->
+
+  <div class="section" id="software-skills">
+    <h2 id="software-titulo">Habilidades en software</h2>
+
+    <div class="skill">
+      <span class="skill-icon"><i class="fa-brands fa-html5" style="font-size: 2.5rem; color: #e44d26;"></i></span>
+      <span class="skill-name">HTML</span>
+      <span class="skill-level">
+        <span class="level-circle active"></span>
+        <span class="level-circle active"></span>
+        <span class="level-circle active"></span>
+        <span class="level-circle"></span>
+        <span class="level-circle"></span>
+      </span>
+    </div>
+
+    <div class="skill">
+      <span class="skill-icon"><i class="fa-brands fa-css3-alt" style="font-size: 2.5rem; color: blue;"></i></span>
+      <span class="skill-name">CSS</span>
+      <span class="skill-level">
+        <span class="level-circle active"></span>
+        <span class="level-circle active"></span>
+        <span class="level-circle active"></span>
+        <span class="level-circle"></span>
+        <span class="level-circle"></span>
+      </span>
+    </div>
+
+    <div class="skill">
+      <span class="skill-icon"><i class="fa-brands fa-js" style="font-size: 2.5rem; color: darkgoldenrod;"></i></span>
+      <span class="skill-name">JavaScript</span>
+      <span class="skill-level">
+        <span class="level-circle active"></span>
+        <span class="level-circle active"></span>
+        <span class="level-circle"></span>
+        <span class="level-circle"></span>
+        <span class="level-circle"></span>
+      </span>
+    </div>
+
+    <div class="skill">
+      <span class="skill-icon"><i class="fa-brands fa-github" style="font-size: 2.5rem;"></i></span>
+      <span class="skill-name">GitHub</span>
+      <span class="skill-level">
+        <span class="level-circle active"></span>
+        <span class="level-circle active"></span>
+        <span class="level-circle"></span>
+        <span class="level-circle"></span>
+        <span class="level-circle"></span>
+      </span>
+    </div>
+
+  <div class="skill">
+  <span class="skill-icon">
+    <!-- SVG de Visual Studio Code -->
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" style="width: 2.5rem; height: 2.5rem;">
+  </span>
+  <span class="skill-name">Visual Studio Code</span>
+  <span class="skill-level">
+    <span class="level-circle active"></span>
+    <span class="level-circle active"></span>
+    <span class="level-circle active"></span>
+    <span class="level-circle"></span>
+    <span class="level-circle"></span>
+    
+  </span>
+</div>
+
+
+<div class="skill">
+  <span class="skill-icon"><i class="fa-solid fa-database" style="font-size: 2.5rem; color: #00618a;"></i></span>
+  <span class="skill-name">MySQL</span>
+  <span class="skill-level">
+    <span class="level-circle active"></span>
+    <span class="level-circle active"></span>
+    <span class="level-circle"></span>
+    <span class="level-circle"></span>
+    <span class="level-circle"></span>
+  </span>
+</div>
+
+  </div> <!-- Cierra #software-skills -->
+
+</div> <!-- Cierra .right -->
+</div> <!-- Cierra .container -->
+
+  </main>
+  <script src="script.js"></script>
+</body>
 </html>

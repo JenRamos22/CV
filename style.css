@@ -342,7 +342,9 @@ ul {
 }
 
 
-
+#software-titulo:hover {
+  color: #e44d26; /* El mismo color que usas en los otros títulos */
+}
 
 #software-skills h2 {
   font-size: 1.8rem;
